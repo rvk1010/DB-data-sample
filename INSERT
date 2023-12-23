@@ -1,0 +1,93 @@
+INSERT INTO singer
+VALUES 
+(1, 'Vasiliy Pupkin'),
+(2, 'Ivan Petrov'),
+(3, 'Petr Ivanov'),
+(4, 'Alex Vetrov'),
+(5, 'Slava'),
+(6, 'Shura');
+
+INSERT INTO genre
+VALUES
+(1,'rock'),
+(2, 'pop'),
+(3, 'jazz'),
+(4,'classik');
+
+INSERT INTO Album
+VALUES
+(1, 'Winter', 2004),
+(2, 'Spring', 2018),
+(3, 'Summer', 2020),
+(4, 'Autumn', 2021);
+
+INSERT INTO trek
+VALUES
+(1, 'Mountain', 3.5, 1),
+(2, 'Lake', 3.6, 1),
+(3, 'Tree', 3.7, 2),
+(4, 'Field', 3.8, 2),
+(5, 'Forest', 3.0, 3),
+(6, 'Tundra', 3.1, 4)
+(7, 'My sun', 2.5, 3)
+(8, 'Sky', 2.2, 4),
+(9, 'Мой друг', 2.7, 4);
+
+INSERT INTO mixtape
+VALUES
+(1, 'Nord', 2015),
+(2, 'East', 2018),
+(3, 'South', 2020),
+(4, 'West', 2022),
+(5, 'Nord-South', 2018),
+(6, 'East-West', 2020);
+
+INSERT INTO singer_genre
+VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 1, 2),
+(6, 2, 1),
+(7, 3, 1),
+(8, 1, 3),
+(9, 2, 3),
+(10, 1, 4),
+(11, 4, 1);
+
+INSERT INTO singer_album
+VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 2, 1),
+(6, 1, 2),
+(7, 5, 1),
+(8, 6, 1),
+(9, 1, 3),
+(10, 2, 3),
+(11, 6, 4),
+(12, 5, 3),
+(13, 6, 4);
+
+INSERT INTO trek_mixtape
+VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 1, 5),
+(6, 1, 6),
+(7, 1, 2),
+(8, 1, 3),
+(9, 1, 4),
+(10, 2, 3),
+(11, 2, 5),
+(12, 3, 4),
+(13, 4, 6),
+(14, 7, 1),
+(15, 7, 2),
+(16, 9, 3),
+(17, 9, 4);

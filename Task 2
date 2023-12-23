@@ -1,0 +1,15 @@
+select name_trek, duration from trek
+where duration = (select MAX (duration) from trek);
+
+select name_trek, duration from trek
+where duration >= 3.5;
+
+select name_mixtape, year_mixtape from mixtape
+where year_mixtape between 2018 and 2020;
+
+select singer_id, name_singer from singer
+where name_singer not like '%% %%';
+
+
+select trek_id, name_trek, duration from trek
+where name_trek like '%My%' or name_trek like '%мой'

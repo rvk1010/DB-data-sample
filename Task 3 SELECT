@@ -1,0 +1,25 @@
+select name_genre, count (singer_id) from genre as g
+join singer as s on g.genre_id = s.singer_id
+group by name_genre;
+
+select year_album, count (trek_id) from album as al
+join trek as tr on al.album_id = tr.trek_id
+where year_album between 2019 and 2020
+group by year_album;
+
+select name_album, avg(duration) from trek as tr
+join album as al on tr.trek_id = al.album_id
+group by name_album
+
+select name_singer from singer as s
+join singer_album on s.singer_id = singer_album.singer_album_id
+join album as a on singer_album.singer_album_id = a.album_id
+where year_album != 2020
+group by name_singer
+
+select name_mixtape from mixtape
+join trek_mixtape on mixtape.mixtape_id = trek_mixtape.trek_mixtape_id
+join trek on trek_mixtape.trek_mixtape_id = trek.trek_id
+join album on trek.trek_id = album.album_id
+join singer_album on album.album_id = singer_album.singer_album_id
+join singer on singer_album.singer_album_id = sing

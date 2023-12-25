@@ -23,3 +23,4 @@ join trek on trek_mixtape.trek_mixtape_id = trek.trek_id
 join album on trek.trek_id = album.album_id
 join singer_album on album.album_id = singer_album.singer_album_id
 join singer on singer_album.singer_album_id = sing
+where name_singer = 'Vasiliy Pupkin'
